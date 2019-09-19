@@ -1,6 +1,6 @@
 body{
     background: rgb(34,193,195);
-    background: linear-gradient( to right, rgba(34,193,195,1) 0%, rgba(253,187,45,1)100%);
+    background: linear-gradient( to right, #42e5e7 0%, rgba(253,187,45,1)100%);
 }
 #container{
      background-color: white;
@@ -26,12 +26,29 @@ p {
     padding-left: 20px;
 }
 
-#billAmt{
+#billAmt, #service, #people{
     margin-left: 20px;
-    font-size: 20px;
+    font-size: 15px;
 
 }
-#billAmt:focus{
+#billAmt:focus, #service:focus, #people:focus{
     outline: none;
-    border: 3px solid;
+    border: 1px solid;
+}
+
+button {
+    display: block;
+    margin: 30px auto;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color: #42e5e7;
+}
+
+button:focus{
+    outline: none;
 }
